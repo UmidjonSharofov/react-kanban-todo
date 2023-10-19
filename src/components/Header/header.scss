@@ -1,0 +1,30 @@
+header{
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 2px -5px gray;
+  a{
+    padding: 7px 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif!important;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color:#212121;
+    transition: all 0.4s linear;
+    border-bottom: 2px solid transparent;
+    svg{
+      margin-right: 5px;
+    }
+  }
+  .active{
+    color: #7b68ee;
+    border-bottom: 2px solid #7b68ee;
+  }
+}

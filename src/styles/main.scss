@@ -1,0 +1,175 @@
+@import "../components/Header/header";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ body{
+   font-family: 'Ubuntu', sans-serif!important;
+   color:#212121;
+   background-color: #fafbfc;
+ }
+
+ .container{
+   max-width: 80%;
+   margin: 0 auto;
+ }
+
+ .list{
+   padding: 20px 0;
+   .top{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+   table{
+     margin-top: 40px;
+     background-color: white!important;
+     -webkit-box-shadow: -4px -5px 34px 0px rgba(34, 60, 80, 0.2);
+     -moz-box-shadow: -4px -5px 34px 0px rgba(34, 60, 80, 0.2);
+     box-shadow: -4px -5px 34px 0px rgba(34, 60, 80, 0.2);
+     thead{
+       tr{
+         background-color: white;
+       }
+     }
+     button{
+       height: 40px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       svg{
+         width: 16px;
+         height: 16px;
+       }
+     }
+     .table_img{
+       width: 50px;
+       height: 50px;
+       object-fit: contain;
+     }
+     .danger{
+       color: red;
+       border: 1px solid red;
+       &:hover{
+         border: 1px solid red;
+         color: red;
+       }
+     }
+   }
+ }
+
+h6{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.none_input{
+  display: none!important;
+}
+
+.label_input{
+  border: 1px dashed #1677ff;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 8px;
+}
+.ant-input{
+  padding: 10px!important;
+  border-radius: 8px;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+  input{
+    width: 100%;
+    border: 1px dashed #1677ff;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+  }
+}
+.rounded_picker{
+  width: 100px;
+  height: 50px;
+}
+
+.board_cards{
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 15px;
+  .board_card{
+   background-color: white;
+    -webkit-box-shadow: -4px -5px 34px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -4px -5px 34px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: -4px -5px 34px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 13px;
+    padding: 15px;
+    min-height: 400px;
+    height: 100%;
+    padding-top: 60px;
+    position: relative;
+    .status_top{
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      h1{
+        text-transform: capitalize;
+        font-size: 24px;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+    }
+    .complete{
+      svg, h1{
+        color: green;
+      }
+    }
+    .progress{
+      svg ,h1{
+        color:#1677ff;
+      }
+    }
+
+    .card_item{
+      padding: 10px;
+      border: 1px dashed #7b68ee;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      .title{
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+      img{
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        margin-bottom: 20px;
+      }
+      .date{
+        display: block;
+        text-align: right;
+        font-size: 12px;
+        color: grey;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.tasks{
+  padding: 30px;
+  button{
+    margin-left: auto;
+    display: block;
+  }
+}
